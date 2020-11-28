@@ -1,3 +1,4 @@
+// eslint-disable-next-line 
 import React from 'react';
 import Close from '../assets/close.svg';
 import Dropdown from "../assets/dropdown.svg";
@@ -6,7 +7,7 @@ import Checkoff from "../assets/checkoff.svg";
 import {flowy} from '../flowy.min';
 
 const Properties = (props) => {
-    const handleDelete = () => {
+    const Delete = () => {
         flowy.deleteBlocks();
     }
 
@@ -36,7 +37,7 @@ const Properties = (props) => {
                 <div className="checkus"><img src={Checkoff} /><p>Give priority to this block</p></div>
             </div>
             <div id="divisionthing"></div>
-            <div id="removeblock" onClick={() => handleDelete()}>Delete blocks</div>
+            <div id="removeblock" onClick={() => Delete()}>Delete blocks</div>
         </div>
     </div>
     );

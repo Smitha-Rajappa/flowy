@@ -1,10 +1,9 @@
-
+// eslint-disable-next-line
 import Database from "../assets/database.svg";
 import Action from "../assets/action.svg";
 import Twitter from "../assets/twitter.svg";
 import Grabme from '../assets/grabme.svg';
 import Eye from '../assets/eye.svg';
-import Eyeblue from '../assets/eyeblue.svg'
 import Time from '../assets/time.svg';
 import Errors from '../assets/error.svg';
 import Log from '../assets/log.svg';

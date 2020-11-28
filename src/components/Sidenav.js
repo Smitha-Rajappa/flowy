@@ -1,8 +1,8 @@
+// eslint-disable-next-line 
 import React, { useState, useEffect } from 'react';
 import BlockElement from './BlockElement';
 import CloseLeft from '../assets/closeleft.svg';
 import Search from '../assets/search.svg';
-import Heart from '../assets/heart.svg';
 import {flowy} from '../flowy.min';
 import {triggers,actions,loggers} from './Blocks'
 
@@ -11,14 +11,14 @@ const Sidebar = () => {
     const [list, setList] = useState(null);
 
     useEffect(() => {
-        displayBlocks();
+        displayList();
     }, [selectItem]);
 
     useEffect(()=>{
         flowy(document.getElementById("canvas"));
     },[]);
 
-    const displayBlocks = () => {
+    const displayList = () => {
         if(selectItem === 'triggers') {
             setList(triggers);
         } else if (selectItem === 'actions') {

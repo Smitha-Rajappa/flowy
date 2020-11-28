@@ -1,6 +1,6 @@
+// eslint-disable-next-line 
 import React from 'react';
 import Arrow from '../assets/arrow.svg';
-
 
 const Header = () => {
     return (
