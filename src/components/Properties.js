@@ -6,7 +6,7 @@ import Checkoff from "../assets/checkoff.svg";
 import {flowy} from '../flowy.min';
 
 const Properties = (props) => {
-    const deleteBlocks = () => {
+    const handleDelete = () => {
         flowy.deleteBlocks();
     }
 
@@ -36,10 +36,9 @@ const Properties = (props) => {
                 <div className="checkus"><img src={Checkoff} /><p>Give priority to this block</p></div>
             </div>
             <div id="divisionthing"></div>
-            <div id="removeblock" onClick={() => deleteBlocks()}>Delete blocks</div>
+            <div id="removeblock" onClick={() => handleDelete()}>Delete blocks</div>
         </div>
     </div>
     );
 }
-
 export default Properties;
